@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+
+}
+.container{
+    width: 350px;
+    height:200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.eye1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #212121;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, 50%) rotate(45deg);
+    border-radius: 90% 6% 75% 1%;
+    background-color: rgb(197, 184, 200);
+    overflow: hidden;
+    box-shadow: 0 0 100px rgb(175, 158, 195);
+}
+
+.eye2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #212121;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, 50%) rotate(45deg);
+    border-radius: 90% 1% 75% 6%;
+    background-color: rgb(197, 184, 200);
+    overflow: hidden;
+    box-shadow: 0 0 100px rgb(175, 158, 195);
+}
+
+div>div>div{
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation-name: animate;
+    animation-duration:  5.25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+span{
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.iris{
+    width: 8.5%;
+    height: 8.5%;
+    background-color: #212121;
+}
+.iris2{
+    width: 24%;
+    height: 24%;
+    background-color: rgb(175, 158, 195);
+    border: 1px solid black;
+}
+
+.l1{
+    animation-delay: 0s;
+}
+.l2{
+    animation-delay: 0.75s;
+}
+.l3{
+    animation-delay: 1.5s;
+}
+.l4{
+    animation-delay: 2.25s;
+}
+.l5{
+    animation-delay: 3s;
+}
+.l6{
+    animation-delay: 3.75s;
+}
+.l7{
+    animation-delay: 4.5s;
+}
+.l7{
+    animation-delay: 5.25s;
+}
+
+@keyframes animate{
+    0%{
+        width: 5%;
+        height: 5%;
+    }
+    100%{
+        width: 150%;
+        height: 150%;
+    }
+}
